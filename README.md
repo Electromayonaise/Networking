@@ -1,5 +1,16 @@
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<a name="gjdgxs"></a>**GUÍA DE ESTUDIO**
+<div align="center">
+  <img  src="https://github.com/Electromayonaise/Electromayonaise/blob/main/Assets/github-contribution-grid-snake%20blacktest(1).svg"
+       alt="snake" /></a>
+</div>
+
+
+# Networking
+
+Repo de networking con material del curso Computación en internet
+
+# Introducción 
 
 Martín Gómez Caicedo
 
@@ -301,5 +312,6 @@ Las direcciones privadas se utilizan para redes internas dentro de organizacione
 La técnica de NAT (Network Address Translation) se emplea para traducir direcciones IP privadas en una red interna a una dirección IP pública utilizada en Internet. Esto permite que múltiples dispositivos en una red privada compartan una única dirección IP pública para acceder a Internet. Además, NAT proporciona una capa adicional de seguridad al ocultar las direcciones IP internas de la red privada.
 
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
