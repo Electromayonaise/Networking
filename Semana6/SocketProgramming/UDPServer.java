@@ -2,7 +2,7 @@ import java.net.*;
 
 public class UDPServer {
     public static void main(String[] args) throws Exception {
-        InetAddress IPAddress = InetAddress.getByName("172.20.10.4");
+        InetAddress IPAddress = InetAddress.getByName("172.30.187.204"); // Please keep in mind that this IP address must be updated to your ip address
         // Crear un socket UDP en el puerto 9876
         DatagramSocket serverSocket = new DatagramSocket(9876, IPAddress);
         System.out.println("Servidor UDP iniciado");
