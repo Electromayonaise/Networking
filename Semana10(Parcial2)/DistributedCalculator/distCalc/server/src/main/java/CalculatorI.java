@@ -1,20 +1,26 @@
 import com.zeroc.Ice.Current;
 
-public class CalculatorI implements Calculator{
+public class CalculatorI implements MathCalc.Calculator{
 
-    public int add(int a, int b, Current current) {
+    @Override
+    public double add (double a, double b, Current current) {
         return a + b;
     }
 
-    public int sub(int a, int b, Current current) {
+    @Override
+    public double subtract (double a, double b, Current current) {
         return a - b;
     }
 
-    public int mul(int a, int b, Current current) {
+    @Override
+    public double multiply (double a, double b, Current current) {
         return a * b;
     }
 
-    public int div(int a, int b, Current current) {
+    @Override
+    public double divide (double a, double b, Current current) {
         return a / b;
     }
+
+    
 }

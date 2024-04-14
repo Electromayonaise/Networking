@@ -19,7 +19,7 @@ subprojects {
  //
  slice {
  java {
- files = [file("../Myapp.ice")]
+ files = [file("../DistCalc.ice")]
  }
  }
  //
