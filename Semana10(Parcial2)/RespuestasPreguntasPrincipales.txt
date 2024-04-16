@@ -1,0 +1,15 @@
+**Pregunta 3 - Parte 1:**
+
+Después de realizar las modificaciones y ejecutar tres clientes al mismo tiempo, se puede observar que las respuestas no se dan de forma simultánea. En cambio, cada llamado espera a que termine el anterior para iniciar su ejecución. Esto se debe a que los llamados son sincrónicos, lo que significa que el cliente espera bloqueado hasta recibir la respuesta del servidor antes de continuar con la siguiente solicitud.
+
+**Pregunta 6 - Parte 2:**
+
+Después de aplicar las modificaciones, especialmente la configuración del tamaño del ThreadPool en el servidor, se pueden observar diferencias significativas en el comportamiento de las respuestas en comparación con las pruebas anteriores. Con un tamaño de ThreadPool más grande, el servidor puede manejar más solicitudes simultáneas de clientes, lo que puede conducir a una mayor concurrencia y posiblemente a un procesamiento más rápido de las solicitudes.
+
+**Pregunta 10 - Parte 3:**
+
+La diferencia principal entre los llamados remotos síncronos y asíncronos radica en cómo manejan la espera de la respuesta del servidor. En los llamados síncronos, el cliente espera bloqueado hasta recibir la respuesta del servidor, mientras que en los llamados asíncronos, el cliente puede continuar ejecutando otras tareas mientras espera la respuesta. Los llamados síncronos son útiles cuando se necesita la respuesta inmediata del servidor y no hay otras tareas críticas que realizar en el cliente. Los llamados asíncronos son útiles cuando se necesita mantener la capacidad de respuesta del cliente y cuando se requieren múltiples solicitudes simultáneas o cuando el tiempo de respuesta del servidor puede ser variable.
+
+**Pregunta 13 - Parte 3:**
+
+Después de ejecutar nuevamente las pruebas con dos clientes realizando llamados de forma simultánea, se observa que, posterior a usar llamados asíncronos (async), los clientes pueden realizar las solicitudes sin esperar a que finalicen las anteriores. Esto proporciona una mayor concurrencia y puede mejorar el tiempo de respuesta percibido por el usuario. Comparado con las pruebas anteriores, donde se utilizaban llamados síncronos, se puede notar una mayor eficiencia y capacidad de respuesta en el sistema al utilizar llamados asíncronos.
