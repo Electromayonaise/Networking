@@ -1,0 +1,12 @@
+<state>
+  <timestamp value='1713225667568' />
+  <sourceSet name='default'>
+    <source name='C:\Code\Repositories\Networking\Semana10(Parcial2)\DistributedCalculator\distCalc\DistCalc.ice'>
+      <file name='C:\Code\Repositories\Networking\Semana10(Parcial2)\DistributedCalculator\distCalc\server\build\generated-src\MathCalc\Calculator.java' />
+      <file name='C:\Code\Repositories\Networking\Semana10(Parcial2)\DistributedCalculator\distCalc\server\build\generated-src\MathCalc\CalculatorPrx.java' />
+      <file name='C:\Code\Repositories\Networking\Semana10(Parcial2)\DistributedCalculator\distCalc\server\build\generated-src\MathCalc\_CalculatorPrxI.java' />
+    </source>
+    <arg value='C:\Program Files\ZeroC\Ice-3.7.10\\bin\slice2java.exe' />
+    <arg value='-IC:\Program Files\ZeroC\Ice-3.7.10\\slice' />
+  </sourceSet>
+</state>

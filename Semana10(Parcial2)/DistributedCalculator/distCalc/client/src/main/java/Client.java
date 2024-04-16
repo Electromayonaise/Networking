@@ -1,13 +1,16 @@
 import java.util.Scanner;
+import MathCalc.*;
+import com.zeroc.Ice.*;
+import java.util.concurrent.CompletableFuture;
 
 public class Client {
 
     Scanner scanner;
 
-    public static void main(String[] args) {
-        try(com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(args)) {
-            com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("DistributedCalculator:tcp -h localhost -p 10000");
-            MathCalc.CalculatorPrx calculator = MathCalc.CalculatorPrx.checkedCast(base);
+    public static void main(String[] args) throws java.lang.Exception {
+        try(Communicator communicator = Util.initialize(args, "client.config")) {
+            ObjectPrx base = communicator.propertyToProxy("server.proxy");
+            CalculatorPrx calculator = CalculatorPrx.checkedCast(base);
             if(calculator == null) {
                 throw new Error("Invalid proxy");
             }
@@ -28,7 +31,9 @@ public class Client {
                         System.out.println("Enter two numbers: ");
                         a = scanner.nextDouble();
                         b = scanner.nextDouble();
-                        System.out.println("Result: " + calculator.add(a, b));
+                        CompletableFuture<Double> answer = calculator.addAsync(a, b);
+                        Double r = answer.get();
+                        System.out.println("Result: " + r);
                         break;
                     case 2:
                         System.out.println("Enter two numbers: ");
