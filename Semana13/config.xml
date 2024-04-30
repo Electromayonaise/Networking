@@ -1,0 +1,11 @@
+<configuracion>
+    <red>
+        <ip>192.168.0.1</ip>
+        <puerto>8080</puerto>
+    </red>
+    <imagenes>
+        <origen>/ruta/a/imagenes</origen>
+        <destino>/ruta/a/imagenes_procesadas</destino>
+        <formato>nuevo_formato</formato>
+    </imagenes>
+</configuracion>
