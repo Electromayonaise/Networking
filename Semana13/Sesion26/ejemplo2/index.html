@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de GET y POST</title>
+</head>
+<body>
+    <h1>Uso de GET y POST</h1>
+    <h2>Solicitud GET</h2>
+    <p>La siguiente solicitud GET enviará un mensaje al servidor:</p>
+    <form action="http://localhost:8080" method="get">
+        <input type="text" name="message" placeholder="Escribe un mensaje">
+        <button type="submit">Enviar GET</button>
+    </form>
+
+    <h2>Solicitud POST</h2>
+    <p>La siguiente solicitud POST enviará un mensaje al servidor:</p>
+    <form action="http://localhost:8080" method="post">
+        <input type="text" name="message" placeholder="Escribe un mensaje">
+        <button type="submit">Enviar POST</button>
+    </form>
+</body>
+</html>
