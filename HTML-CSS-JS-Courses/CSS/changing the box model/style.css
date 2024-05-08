@@ -1,0 +1,80 @@
+body {
+    background-color: #FFF;
+    margin: 0px;
+    padding: 50px 60px;
+  }
+  
+  h1 {
+    color: #004E89;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #AAA;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: #333;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .actions {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .actions a {
+    background-color: #9DD1F1;
+    border-radius: 3px;
+    color: #004E89;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #gameboard {
+    position: relative;
+    text-align: center;
+    top: 30px;
+  }
+  
+  .card {
+    
+    border: 2px solid #9DD1F1;
+    display: inline-block;
+    height: 200px;
+    margin-top: 4px;
+    padding: 30px auto;
+    text-align: center;
+    width: 215px;
+  }
+  
+  .card:hover {
+    background-color: #004E89;
+    border-color: #004E89;
+  }
+  
+  .card img {
+    padding-top: 40px;
+  }
