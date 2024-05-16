@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#dataList {
+    margin-top: 20px;
+}
+#dataList p {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
