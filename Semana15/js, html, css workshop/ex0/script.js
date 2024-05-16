@@ -22,3 +22,16 @@ function doubleNumber() {
         outputDiv.textContent = `Doble de ${number} es ${doubledNumber}`;
     }
 }
+
+function squareNumber() {
+    const numberInput = document.getElementById('numberInput2');
+    const number = parseFloat(numberInput.value);
+
+    if (isNaN(number)) {
+        alert('Ingresar un valor numerico!');
+    } else {
+        const outputDiv = document.getElementById('output');
+        const squaredNumber = number * number;
+        outputDiv.textContent = `Cuadrado de ${number} es ${squaredNumber}`;
+    }
+}

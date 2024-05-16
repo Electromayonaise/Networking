@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo consumo de API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ejemplo consumo de datos: Weather API</h1>
+    <div>
+        <label for="city">Ciudad:</label>
+        <input type="text" id="city" placeholder="Ingrese la ciudad">
+    </div>
+    <div>
+        <label for="language">Lenguaje:</label>
+        <input type="text" id="language" placeholder="Ingrese el lenguaje">
+    </div>
+    <div>
+        <label for="unit">Unidad de temperatura:</label>
+        <select id="unit">
+            <option value="metric">Celsius</option>
+            <option value="imperial">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+    </div>
+    <button onclick="getWeather()">Obtener Clima</button>
+    <div id="weather"></div>
+    <script src="script.js"></script>
+</body>
+</html>
