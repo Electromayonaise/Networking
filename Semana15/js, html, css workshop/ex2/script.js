@@ -1,4 +1,4 @@
-const apiKey = 'API KEY'; // Reemplazar con su llave
+const apiKey = 'c38912460721bfb0454dad6b7f65e90d'; 
 const city = 'Cali'; // reemplazar con la ciudad
 
 async function getWeatherForecast() {
